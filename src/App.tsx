@@ -49,6 +49,7 @@ function App() {
       setImages(thumbnailsData);
       setIsLoading(false);
     };
+
     if (filename) {
       init();
     }
@@ -80,12 +81,10 @@ function App() {
             value={seconds}
             onChange={(event) => {
               const v = event.target.value;
-
-              if (v !== "") {
-                setSeconds(parseInt(v));
-              }
+              setSeconds(parseInt(v));
             }}
           />
+          default is 5
         </label>
 
         <Dropzone onDrop={onDrop} accept={{ "video/*": [] }} />
