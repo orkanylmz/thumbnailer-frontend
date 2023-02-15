@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+.text-center {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+/* Dropzone */
+.dropzone {
+  padding: 30px;
+  height: 30vh;
+  border: 5px dashed #d1d416;
+  outline: none;
+  cursor: pointer;
+}
+.dropzone-hover {
+  background-color: #d1d416;
+  border: 7px solid #d45c54;
+}
+.dropzone-content {
+  align-self: center;
+  font-size: 24px;
+}

@@ -75,6 +75,7 @@ function App() {
         <label>
           Generate Every X Seconds:
           <input
+            style={{ marginBottom: 10 }}
             type="number"
             value={seconds}
             onChange={(event) => {

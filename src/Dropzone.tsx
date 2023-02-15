@@ -14,14 +14,18 @@ const Dropzone = ({ onDrop, accept }) => {
   */
 
   return (
-    <div className="dropzone-div" {...getRootProps()}>
+    <div
+      className={isDragActive ? "dropzone dropzone-hover" : "dropzone"}
+      {...getRootProps()}
+    >
       <input className="dropzone-input" {...getInputProps()} />
       <div className="text-center">
         {isDragActive ? (
-          <p className="dropzone-content">Release to drop the files here</p>
+          <p className="dropzone-content"></p>
         ) : (
           <p className="dropzone-content">
-            Drag 'n' drop some files here, or click to select files
+            <i className="upload icon"></i>
+            Drop files here, or click to select file{" "}
           </p>
         )}
       </div>
